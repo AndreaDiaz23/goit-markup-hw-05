@@ -5,7 +5,8 @@
       modal: document.querySelector(".modal"),
     };
   
-    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.openModalBtn.addEventListener("click", toggleModal (e));
+    e.preventDefault();
     refs.closeModalBtn.addEventListener("click", toggleModal);
   
     function toggleModal() {
